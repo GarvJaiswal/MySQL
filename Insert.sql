@@ -1,0 +1,2 @@
+INSERT INTO EMP VALUES(01,'Garv',10000,'Jr Developer');
+INSERT INTO EMP(empId,name) VALUES(02,'ABC');
