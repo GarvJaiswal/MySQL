@@ -1,0 +1,14 @@
+SELECT SUM(SALARY)
+FROM employees;
+
+SELECT AVG(SALARY)
+FROM employees
+
+SELECT MAX(SALARY)
+FROM employees;
+
+SELECT MIN(SALARY)
+FROM employees;
+
+SELECT COUNT(SALARY)
+FROM employees;
