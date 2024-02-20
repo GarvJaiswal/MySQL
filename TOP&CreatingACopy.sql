@@ -1,0 +1,8 @@
+SELECT TOP(2) SALARY
+FROM employees
+ORDER BY SALARY DESC;
+
+SELECT * INTO copied
+FROM newDB.dbo.EMP;
+
+SELECT * FROM copied;
