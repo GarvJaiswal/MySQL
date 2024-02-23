@@ -1,0 +1,22 @@
+CREATE PROCEDURE proc_Details
+AS
+BEGIN
+	SELECT * FROM LMS;
+END
+GO
+
+EXEC proc_Details;
+GO;
+
+CREATE PROCEDURE proc_paraDetails (@department INTEGER)
+AS
+BEGIN
+	SELECT *
+	FROM LMS
+	INNER JOIN MACHINELOGS
+	ON LMS.DEPTID=MACHINELOGS.DeptId
+	WHERE LMS.DEPTID=@department;
+END
+GO
+
+EXEC proc_paraDetails @department=10;
